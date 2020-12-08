@@ -1,0 +1,2312 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "55": "contracts/lib/token/ERC721/ERC721Holder.sol",
+    "60": "contracts/lib/token/ERC721/IERC721Receiver.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/lib/token/ERC721/ERC721Holder.sol",
+    "exportedSymbols": {
+      "ERC721Holder": [
+        15033
+      ]
+    },
+    "id": 15034,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 15008,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1:23:55"
+      },
+      {
+        "absolutePath": "contracts/lib/token/ERC721/IERC721Receiver.sol",
+        "file": "./IERC721Receiver.sol",
+        "id": 15009,
+        "nodeType": "ImportDirective",
+        "scope": 15034,
+        "sourceUnit": 15263,
+        "src": "26:31:55",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 15011,
+              "name": "IERC721Receiver",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 15262,
+              "src": "333:15:55",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC721Receiver_$15262",
+                "typeString": "contract IERC721Receiver"
+              }
+            },
+            "id": 15012,
+            "nodeType": "InheritanceSpecifier",
+            "src": "333:15:55"
+          }
+        ],
+        "contractDependencies": [
+          15262
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 15010,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:246:55",
+          "text": " @dev Implementation of the {IERC721Receiver} interface.\n Accepts all token transfers. \n Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}."
+        },
+        "fullyImplemented": true,
+        "id": 15033,
+        "linearizedBaseContracts": [
+          15033,
+          15262
+        ],
+        "name": "ERC721Holder",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "baseFunctions": [
+              15261
+            ],
+            "body": {
+              "id": 15031,
+              "nodeType": "Block",
+              "src": "606:54:55",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 15027,
+                        "name": "this",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -28,
+                        "src": "623:4:55",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ERC721Holder_$15033",
+                          "typeString": "contract ERC721Holder"
+                        }
+                      },
+                      "id": 15028,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "onERC721Received",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 15032,
+                      "src": "623:21:55",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$returns$_t_bytes4_$",
+                        "typeString": "function (address,address,uint256,bytes memory) external returns (bytes4)"
+                      }
+                    },
+                    "id": 15029,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "selector",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "623:30:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 15026,
+                  "id": 15030,
+                  "nodeType": "Return",
+                  "src": "616:37:55"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 15013,
+              "nodeType": "StructuredDocumentation",
+              "src": "356:137:55",
+              "text": " @dev See {IERC721Receiver-onERC721Received}.\n Always returns `IERC721Receiver.onERC721Received.selector`."
+            },
+            "functionSelector": "150b7a02",
+            "id": 15032,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC721Received",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 15023,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "580:8:55"
+            },
+            "parameters": {
+              "id": 15022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15015,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15032,
+                  "src": "524:7:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15014,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "524:7:55",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15017,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15032,
+                  "src": "533:7:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 15016,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:7:55",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15019,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15032,
+                  "src": "542:7:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 15018,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "542:7:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 15021,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15032,
+                  "src": "551:12:55",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 15020,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "551:5:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "523:41:55"
+            },
+            "returnParameters": {
+              "id": 15026,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15025,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 15032,
+                  "src": "598:6:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 15024,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "598:6:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "597:8:55"
+            },
+            "scope": 15033,
+            "src": "498:162:55",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 15034,
+        "src": "308:354:55"
+      }
+    ],
+    "src": "1:662:55"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610159806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6100f66004803603608081101561004657600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561008157600080fd5b82018360208201111561009357600080fd5b803590602001918460018302840111640100000000831117156100b557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610113945050505050565b604080516001600160e01b03199092168252519081900360200190f35b630a85bd0160e11b94935050505056fea2646970667358221220d4cc63906b62496847b038eef9870d52c6436e5b518d696dadfe75453807534164736f6c634300060c0033",
+  "bytecodeSha1": "1dbbe45227e5c574e2c4aab13fa49f014c84989a",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12"
+  },
+  "contractName": "ERC721Holder",
+  "coverageMap": {
+    "branches": {
+      "55": {},
+      "60": {}
+    },
+    "statements": {
+      "55": {},
+      "60": {}
+    }
+  },
+  "dependencies": [
+    "IERC721Receiver"
+  ],
+  "deployedBytecode": "608060405234801561001057600080fd5b506004361061002b5760003560e01c8063150b7a0214610030575b600080fd5b6100f66004803603608081101561004657600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561008157600080fd5b82018360208201111561009357600080fd5b803590602001918460018302840111640100000000831117156100b557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610113945050505050565b604080516001600160e01b03199092168252519081900360200190f35b630a85bd0160e11b94935050505056fea2646970667358221220d4cc63906b62496847b038eef9870d52c6436e5b518d696dadfe75453807534164736f6c634300060c0033",
+  "deployedSourceMap": "308:354:55:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;498:162;;;;;;;;;;;;;;;;-1:-1:-1;;;;;498:162:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;498:162:55;;-1:-1:-1;498:162:55;;-1:-1:-1;;;;;498:162:55:i;:::-;;;;-1:-1:-1;;;;;;498:162:55;;;;;;;;;;;;;;;-1:-1:-1;;;498:162:55;;;;;;:::o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "Implementation of the {IERC721Receiver} interface. Accepts all token transfers.  Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.",
+    "kind": "dev",
+    "methods": {
+      "onERC721Received(address,address,uint256,bytes)": {
+        "details": "See {IERC721Receiver-onERC721Received}. Always returns `IERC721Receiver.onERC721Received.selector`."
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    308,
+    662
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x2B JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x150B7A02 EQ PUSH2 0x30 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0xF6 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x80 DUP2 LT ISZERO PUSH2 0x46 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP3 CALLDATALOAD DUP2 AND SWAP3 PUSH1 0x20 DUP2 ADD CALLDATALOAD SWAP1 SWAP2 AND SWAP2 PUSH1 0x40 DUP3 ADD CALLDATALOAD SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x80 DUP2 ADD PUSH1 0x60 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x81 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x93 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0xB5 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x113 SWAP5 POP POP POP POP POP JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xE0 SHL SUB NOT SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH4 0xA85BD01 PUSH1 0xE1 SHL SWAP5 SWAP4 POP POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD4 0xCC PUSH4 0x906B6249 PUSH9 0x47B038EEF9870D52C6 NUMBER PUSH15 0x5B518D696DADFE7545380753416473 PUSH16 0x6C634300060C00330000000000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "MSTORE",
+      "path": "55"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "CALLVALUE",
+      "path": "55"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "ISZERO",
+      "path": "55"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "POP",
+      "path": "55"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "CALLDATASIZE",
+      "path": "55"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "LT",
+      "path": "55"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x2B"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "SHR",
+      "path": "55"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH4",
+      "path": "55",
+      "value": "0x150B7A02"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "EQ",
+      "path": "55"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x30"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "46": {
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "47": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        308,
+        662
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "48": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "49": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0xF6"
+    },
+    "52": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x4"
+    },
+    "54": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "55": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATASIZE",
+      "path": "55"
+    },
+    "56": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SUB",
+      "path": "55"
+    },
+    "57": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x80"
+    },
+    "59": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "60": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "LT",
+      "path": "55"
+    },
+    "61": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ISZERO",
+      "path": "55"
+    },
+    "62": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x46"
+    },
+    "65": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "66": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "68": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "69": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "70": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "71": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "73": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "75": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "77": {
+      "op": "SHL"
+    },
+    "78": {
+      "op": "SUB"
+    },
+    "79": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "80": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "81": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "82": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "AND",
+      "path": "55"
+    },
+    "83": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP3",
+      "path": "55"
+    },
+    "84": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "86": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "87": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "88": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "89": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "90": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "91": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "AND",
+      "path": "55"
+    },
+    "92": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "93": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x40"
+    },
+    "95": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "96": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "97": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "98": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "99": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "100": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "101": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "102": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "103": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x80"
+    },
+    "105": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "106": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "107": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x60"
+    },
+    "109": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "110": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "111": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "112": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH5",
+      "path": "55",
+      "value": "0x100000000"
+    },
+    "118": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "119": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "GT",
+      "path": "55"
+    },
+    "120": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ISZERO",
+      "path": "55"
+    },
+    "121": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x81"
+    },
+    "124": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "125": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "127": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "128": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "129": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "130": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "131": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "132": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP4",
+      "path": "55"
+    },
+    "133": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "135": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "136": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "137": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "GT",
+      "path": "55"
+    },
+    "138": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ISZERO",
+      "path": "55"
+    },
+    "139": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x93"
+    },
+    "142": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "143": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "145": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "146": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "147": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "148": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "149": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATALOAD",
+      "path": "55"
+    },
+    "150": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "151": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "153": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "154": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "155": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP5",
+      "path": "55"
+    },
+    "156": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x1"
+    },
+    "158": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP4",
+      "path": "55"
+    },
+    "159": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MUL",
+      "path": "55"
+    },
+    "160": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP5",
+      "path": "55"
+    },
+    "161": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "162": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "GT",
+      "path": "55"
+    },
+    "163": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH5",
+      "path": "55",
+      "value": "0x100000000"
+    },
+    "169": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP4",
+      "path": "55"
+    },
+    "170": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "GT",
+      "path": "55"
+    },
+    "171": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "OR",
+      "path": "55"
+    },
+    "172": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ISZERO",
+      "path": "55"
+    },
+    "173": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0xB5"
+    },
+    "176": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPI",
+      "path": "55"
+    },
+    "177": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "179": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "180": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "REVERT",
+      "path": "55"
+    },
+    "181": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "182": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "183": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "184": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "185": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "186": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x1F"
+    },
+    "188": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "189": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "191": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "192": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "193": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DIV",
+      "path": "55"
+    },
+    "194": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MUL",
+      "path": "55"
+    },
+    "195": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "197": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "198": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x40"
+    },
+    "200": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MLOAD",
+      "path": "55"
+    },
+    "201": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "202": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "203": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "204": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x40"
+    },
+    "206": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MSTORE",
+      "path": "55"
+    },
+    "207": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "208": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP4",
+      "path": "55"
+    },
+    "209": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP3",
+      "path": "55"
+    },
+    "210": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "211": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "212": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "213": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "214": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MSTORE",
+      "path": "55"
+    },
+    "215": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "217": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "218": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP4",
+      "path": "55"
+    },
+    "219": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP4",
+      "path": "55"
+    },
+    "220": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "221": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "222": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP5",
+      "path": "55"
+    },
+    "223": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "CALLDATACOPY",
+      "path": "55"
+    },
+    "224": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x0"
+    },
+    "226": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP3",
+      "path": "55"
+    },
+    "227": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "228": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "229": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "230": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP2",
+      "path": "55"
+    },
+    "231": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MSTORE",
+      "path": "55"
+    },
+    "232": {
+      "op": "POP"
+    },
+    "233": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP3",
+      "path": "55"
+    },
+    "234": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP6",
+      "path": "55"
+    },
+    "235": {
+      "op": "POP"
+    },
+    "236": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH2",
+      "path": "55",
+      "value": "0x113"
+    },
+    "239": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP5",
+      "path": "55"
+    },
+    "240": {
+      "op": "POP"
+    },
+    "241": {
+      "op": "POP"
+    },
+    "242": {
+      "op": "POP"
+    },
+    "243": {
+      "op": "POP"
+    },
+    "244": {
+      "op": "POP"
+    },
+    "245": {
+      "fn": "ERC721Holder.onERC721Received",
+      "jump": "i",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMP",
+      "path": "55"
+    },
+    "246": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "247": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x40"
+    },
+    "249": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP1",
+      "path": "55"
+    },
+    "250": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MLOAD",
+      "path": "55"
+    },
+    "251": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "253": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "255": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "257": {
+      "op": "SHL"
+    },
+    "258": {
+      "op": "SUB"
+    },
+    "259": {
+      "op": "NOT"
+    },
+    "260": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "261": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP3",
+      "path": "55"
+    },
+    "262": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "AND",
+      "path": "55"
+    },
+    "263": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP3",
+      "path": "55"
+    },
+    "264": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MSTORE",
+      "path": "55"
+    },
+    "265": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "MLOAD",
+      "path": "55"
+    },
+    "266": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "267": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "DUP2",
+      "path": "55"
+    },
+    "268": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "269": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SUB",
+      "path": "55"
+    },
+    "270": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "PUSH1",
+      "path": "55",
+      "value": "0x20"
+    },
+    "272": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "ADD",
+      "path": "55"
+    },
+    "273": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP1",
+      "path": "55"
+    },
+    "274": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "RETURN",
+      "path": "55"
+    },
+    "275": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMPDEST",
+      "path": "55"
+    },
+    "276": {
+      "op": "PUSH4",
+      "value": "0xA85BD01"
+    },
+    "281": {
+      "op": "PUSH1",
+      "value": "0xE1"
+    },
+    "283": {
+      "op": "SHL"
+    },
+    "284": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP5",
+      "path": "55"
+    },
+    "285": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "SWAP4",
+      "path": "55"
+    },
+    "286": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "POP",
+      "path": "55"
+    },
+    "287": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "POP",
+      "path": "55"
+    },
+    "288": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "POP",
+      "path": "55"
+    },
+    "289": {
+      "fn": "ERC721Holder.onERC721Received",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "POP",
+      "path": "55"
+    },
+    "290": {
+      "fn": "ERC721Holder.onERC721Received",
+      "jump": "o",
+      "offset": [
+        498,
+        660
+      ],
+      "op": "JUMP",
+      "path": "55"
+    }
+  },
+  "sha1": "a79ae8cc8607202dcf54a012db578394c197727b",
+  "source": "\npragma solidity ^0.6.0;\n\nimport \"./IERC721Receiver.sol\";\n\n  /**\n   * @dev Implementation of the {IERC721Receiver} interface.\n   *\n   * Accepts all token transfers. \n   * Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.\n   */\ncontract ERC721Holder is IERC721Receiver {\n\n    /**\n     * @dev See {IERC721Receiver-onERC721Received}.\n     *\n     * Always returns `IERC721Receiver.onERC721Received.selector`.\n     */\n    function onERC721Received(address, address, uint256, bytes memory) public virtual override returns (bytes4) {\n        return this.onERC721Received.selector;\n    }\n}\n",
+  "sourceMap": "308:354:55:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/lib/token/ERC721/ERC721Holder.sol",
+  "type": "contract"
+}

@@ -58,7 +58,7 @@ contract Laozi is Ownable {
         uint256 accYIPerShare; // Accumulated SUSHIs per share, times 1e12. See below.
     }
 
-    // The SUSHI TOKEN!
+    // The YITOKEN!
     YIToken public yi;
     // Dev address.
     address public devaddr;

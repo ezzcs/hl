@@ -1,0 +1,2219 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "interfaceHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "canImplementInterfaceForAddress",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "38": "contracts/lib/introspection/ERC1820Implementer.sol",
+    "40": "contracts/lib/introspection/IERC1820Implementer.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/lib/introspection/ERC1820Implementer.sol",
+    "exportedSymbols": {
+      "ERC1820Implementer": [
+        11962
+      ]
+    },
+    "id": 11963,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11902,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:38"
+      },
+      {
+        "absolutePath": "contracts/lib/introspection/IERC1820Implementer.sol",
+        "file": "./IERC1820Implementer.sol",
+        "id": 11903,
+        "nodeType": "ImportDirective",
+        "scope": 11963,
+        "sourceUnit": 11989,
+        "src": "58:35:38",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11905,
+              "name": "IERC1820Implementer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11988,
+              "src": "435:19:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC1820Implementer_$11988",
+                "typeString": "contract IERC1820Implementer"
+              }
+            },
+            "id": 11906,
+            "nodeType": "InheritanceSpecifier",
+            "src": "435:19:38"
+          }
+        ],
+        "contractDependencies": [
+          11988
+        ],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 11904,
+          "nodeType": "StructuredDocumentation",
+          "src": "95:308:38",
+          "text": " @dev Implementation of the {IERC1820Implementer} interface.\n Contracts may inherit from this and call {_registerInterfaceForAddress} to\n declare their willingness to be implementers.\n {IERC1820Registry-setInterfaceImplementer} should then be called for the\n registration to be complete."
+        },
+        "fullyImplemented": true,
+        "id": 11962,
+        "linearizedBaseContracts": [
+          11962,
+          11988
+        ],
+        "name": "ERC1820Implementer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 11914,
+            "mutability": "constant",
+            "name": "_ERC1820_ACCEPT_MAGIC",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 11962,
+            "src": "461:100:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 11907,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "461:7:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "arguments": [
+                    {
+                      "argumentTypes": null,
+                      "hexValue": "455243313832305f4143434550545f4d41474943",
+                      "id": 11911,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "537:22:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_a2ef4600d742022d532d4747cb3547474667d6f13804902513b2ec01c848f4b4",
+                        "typeString": "literal_string \"ERC1820_ACCEPT_MAGIC\""
+                      },
+                      "value": "ERC1820_ACCEPT_MAGIC"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_a2ef4600d742022d532d4747cb3547474667d6f13804902513b2ec01c848f4b4",
+                        "typeString": "literal_string \"ERC1820_ACCEPT_MAGIC\""
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 11909,
+                      "name": "abi",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -1,
+                      "src": "520:3:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_abi",
+                        "typeString": "abi"
+                      }
+                    },
+                    "id": 11910,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "encodePacked",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "520:16:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                      "typeString": "function () pure returns (bytes memory)"
+                    }
+                  },
+                  "id": 11912,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "520:40:38",
+                  "tryCall": false,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes memory"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes memory"
+                  }
+                ],
+                "id": 11908,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": -8,
+                "src": "510:9:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                }
+              },
+              "id": 11913,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "510:51:38",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 11920,
+            "mutability": "mutable",
+            "name": "_supportedInterfaces",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 11962,
+            "src": "568:73:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_address_$_t_bool_$_$",
+              "typeString": "mapping(bytes32 => mapping(address => bool))"
+            },
+            "typeName": {
+              "id": 11919,
+              "keyType": {
+                "id": 11915,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "576:7:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "568:44:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_address_$_t_bool_$_$",
+                "typeString": "mapping(bytes32 => mapping(address => bool))"
+              },
+              "valueType": {
+                "id": 11918,
+                "keyType": {
+                  "id": 11916,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "595:7:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "587:24:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                  "typeString": "mapping(address => bool)"
+                },
+                "valueType": {
+                  "id": 11917,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "606:4:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "baseFunctions": [
+              11987
+            ],
+            "body": {
+              "id": 11943,
+              "nodeType": "Block",
+              "src": "850:108:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "condition": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 11931,
+                          "name": "_supportedInterfaces",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11920,
+                          "src": "867:20:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_address_$_t_bool_$_$",
+                            "typeString": "mapping(bytes32 => mapping(address => bool))"
+                          }
+                        },
+                        "id": 11933,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 11932,
+                          "name": "interfaceHash",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11923,
+                          "src": "888:13:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "867:35:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 11935,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 11934,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11925,
+                        "src": "903:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "867:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseExpression": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "30783030",
+                          "id": 11939,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "946:4:38",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0x00"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 11938,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "938:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_bytes32_$",
+                          "typeString": "type(bytes32)"
+                        },
+                        "typeName": {
+                          "id": 11937,
+                          "name": "bytes32",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "938:7:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": null,
+                            "typeString": null
+                          }
+                        }
+                      },
+                      "id": 11940,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "938:13:38",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 11941,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "Conditional",
+                    "src": "867:84:38",
+                    "trueExpression": {
+                      "argumentTypes": null,
+                      "id": 11936,
+                      "name": "_ERC1820_ACCEPT_MAGIC",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11914,
+                      "src": "914:21:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 11930,
+                  "id": 11942,
+                  "nodeType": "Return",
+                  "src": "860:91:38"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 11921,
+              "nodeType": "StructuredDocumentation",
+              "src": "648:77:38",
+              "text": " See {IERC1820Implementer-canImplementInterfaceForAddress}."
+            },
+            "functionSelector": "249cb3fa",
+            "id": 11944,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "canImplementInterfaceForAddress",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 11927,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "823:8:38"
+            },
+            "parameters": {
+              "id": 11926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11923,
+                  "mutability": "mutable",
+                  "name": "interfaceHash",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 11944,
+                  "src": "771:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11922,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11925,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 11944,
+                  "src": "794:15:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11924,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "794:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "770:40:38"
+            },
+            "returnParameters": {
+              "id": 11930,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11929,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 11944,
+                  "src": "841:7:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11928,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "841:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "840:9:38"
+            },
+            "scope": 11962,
+            "src": "730:228:38",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11960,
+              "nodeType": "Block",
+              "src": "1288:68:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 11952,
+                          "name": "_supportedInterfaces",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11920,
+                          "src": "1298:20:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_address_$_t_bool_$_$",
+                            "typeString": "mapping(bytes32 => mapping(address => bool))"
+                          }
+                        },
+                        "id": 11955,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 11953,
+                          "name": "interfaceHash",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11947,
+                          "src": "1319:13:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "1298:35:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 11956,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 11954,
+                        "name": "account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11949,
+                        "src": "1334:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1298:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 11957,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1345:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1298:51:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 11959,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1298:51:38"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 11945,
+              "nodeType": "StructuredDocumentation",
+              "src": "964:224:38",
+              "text": " @dev Declares the contract as willing to be an implementer of\n `interfaceHash` for `account`.\n See {IERC1820Registry-setInterfaceImplementer} and\n {IERC1820Registry-interfaceHash}."
+            },
+            "id": 11961,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_registerInterfaceForAddress",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 11950,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11947,
+                  "mutability": "mutable",
+                  "name": "interfaceHash",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 11961,
+                  "src": "1231:21:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11946,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1231:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11949,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 11961,
+                  "src": "1254:15:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11948,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1254:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1230:40:38"
+            },
+            "returnParameters": {
+              "id": 11951,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1288:0:38"
+            },
+            "scope": 11962,
+            "src": "1193:163:38",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 11963,
+        "src": "404:954:38"
+      }
+    ],
+    "src": "33:1326:38"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610111806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063249cb3fa14602d575b600080fd5b605660048036036040811015604157600080fd5b50803590602001356001600160a01b03166068565b60408051918252519081900360200190f35b6000828152602081815260408083206001600160a01b038516845290915281205460ff16609557600060d4565b604051602001808073455243313832305f4143434550545f4d4147494360601b8152506014019050604051602081830303815290604052805190602001205b939250505056fea264697066735822122060384f7556bc6f9d1b7b2c1934d5ded124bf9953d9582e05b56eaa3d175ef81164736f6c634300060c0033",
+  "bytecodeSha1": "9c2619b916052cd57544047e1e4b9e786561c8e6",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.6.12"
+  },
+  "contractName": "ERC1820Implementer",
+  "coverageMap": {
+    "branches": {
+      "38": {
+        "ERC1820Implementer.canImplementInterfaceForAddress": {
+          "1": [
+            867,
+            911,
+            true
+          ]
+        }
+      },
+      "40": {}
+    },
+    "statements": {
+      "38": {
+        "ERC1820Implementer.canImplementInterfaceForAddress": {
+          "0": [
+            860,
+            951
+          ]
+        }
+      },
+      "40": {}
+    }
+  },
+  "dependencies": [
+    "IERC1820Implementer"
+  ],
+  "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063249cb3fa14602d575b600080fd5b605660048036036040811015604157600080fd5b50803590602001356001600160a01b03166068565b60408051918252519081900360200190f35b6000828152602081815260408083206001600160a01b038516845290915281205460ff16609557600060d4565b604051602001808073455243313832305f4143434550545f4d4147494360601b8152506014019050604051602081830303815290604052805190602001205b939250505056fea264697066735822122060384f7556bc6f9d1b7b2c1934d5ded124bf9953d9582e05b56eaa3d175ef81164736f6c634300060c0033",
+  "deployedSourceMap": "404:954:38:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;730:228;;;;;;;;;;;;;;;;-1:-1:-1;730:228:38;;;;;;-1:-1:-1;;;;;730:228:38;;:::i;:::-;;;;;;;;;;;;;;;;;841:7;867:35;;;;;;;;;;;-1:-1:-1;;;;;867:44:38;;;;;;;;;;;;:84;;946:4;867:84;;;520:40;;;;;;-1:-1:-1;;;520:40:38;;;;;;;;;;;;;;;;;;;510:51;;;;;;867:84;860:91;730:228;-1:-1:-1;;;730:228:38:o",
+  "language": "Solidity",
+  "natspec": {
+    "details": "Implementation of the {IERC1820Implementer} interface. Contracts may inherit from this and call {_registerInterfaceForAddress} to declare their willingness to be implementers. {IERC1820Registry-setInterfaceImplementer} should then be called for the registration to be complete.",
+    "kind": "dev",
+    "methods": {
+      "canImplementInterfaceForAddress(bytes32,address)": {
+        "notice": "See {IERC1820Implementer-canImplementInterfaceForAddress}."
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    404,
+    1358
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x249CB3FA EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x56 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH1 0x41 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x68 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP3 DUP2 MSTORE PUSH1 0x20 DUP2 DUP2 MSTORE PUSH1 0x40 DUP1 DUP4 KECCAK256 PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP6 AND DUP5 MSTORE SWAP1 SWAP2 MSTORE DUP2 KECCAK256 SLOAD PUSH1 0xFF AND PUSH1 0x95 JUMPI PUSH1 0x0 PUSH1 0xD4 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x20 ADD DUP1 DUP1 PUSH20 0x455243313832305F4143434550545F4D41474943 PUSH1 0x60 SHL DUP2 MSTORE POP PUSH1 0x14 ADD SWAP1 POP PUSH1 0x40 MLOAD PUSH1 0x20 DUP2 DUP4 SUB SUB DUP2 MSTORE SWAP1 PUSH1 0x40 MSTORE DUP1 MLOAD SWAP1 PUSH1 0x20 ADD KECCAK256 JUMPDEST SWAP4 SWAP3 POP POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH1 0x38 0x4F PUSH22 0x56BC6F9D1B7B2C1934D5DED124BF9953D9582E05B56E 0xAA RETURNDATASIZE OR 0x5E 0xF8 GT PUSH5 0x736F6C6343 STOP MOD 0xC STOP CALLER ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "CALLVALUE",
+      "path": "38"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "ISZERO",
+      "path": "38"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0xF"
+    },
+    "10": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "JUMPI",
+      "path": "38"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "13": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "14": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "REVERT",
+      "path": "38"
+    },
+    "15": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "POP",
+      "path": "38"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x4"
+    },
+    "19": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "CALLDATASIZE",
+      "path": "38"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "LT",
+      "path": "38"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x28"
+    },
+    "23": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "JUMPI",
+      "path": "38"
+    },
+    "24": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "CALLDATALOAD",
+      "path": "38"
+    },
+    "27": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0xE0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "SHR",
+      "path": "38"
+    },
+    "30": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH4",
+      "path": "38",
+      "value": "0x249CB3FA"
+    },
+    "36": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "EQ",
+      "path": "38"
+    },
+    "37": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x2D"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "JUMPI",
+      "path": "38"
+    },
+    "40": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "41": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "44": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        404,
+        1358
+      ],
+      "op": "REVERT",
+      "path": "38"
+    },
+    "45": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "46": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x56"
+    },
+    "48": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x4"
+    },
+    "50": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "51": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "CALLDATASIZE",
+      "path": "38"
+    },
+    "52": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SUB",
+      "path": "38"
+    },
+    "53": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "55": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "56": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "LT",
+      "path": "38"
+    },
+    "57": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "ISZERO",
+      "path": "38"
+    },
+    "58": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x41"
+    },
+    "60": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMPI",
+      "path": "38"
+    },
+    "61": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "63": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "64": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "REVERT",
+      "path": "38"
+    },
+    "65": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "66": {
+      "op": "POP"
+    },
+    "67": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "68": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "CALLDATALOAD",
+      "path": "38"
+    },
+    "69": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "70": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "72": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "ADD",
+      "path": "38"
+    },
+    "73": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "CALLDATALOAD",
+      "path": "38"
+    },
+    "74": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "76": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "78": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "80": {
+      "op": "SHL"
+    },
+    "81": {
+      "op": "SUB"
+    },
+    "82": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "AND",
+      "path": "38"
+    },
+    "83": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x68"
+    },
+    "85": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "jump": "i",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMP",
+      "path": "38"
+    },
+    "86": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "87": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "89": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "90": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "MLOAD",
+      "path": "38"
+    },
+    "91": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP2",
+      "path": "38"
+    },
+    "92": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP3",
+      "path": "38"
+    },
+    "93": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "94": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "MLOAD",
+      "path": "38"
+    },
+    "95": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "96": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "97": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "98": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SUB",
+      "path": "38"
+    },
+    "99": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "101": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "ADD",
+      "path": "38"
+    },
+    "102": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "103": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "RETURN",
+      "path": "38"
+    },
+    "104": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "105": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        841,
+        848
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "107": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP3",
+      "path": "38",
+      "statement": 0
+    },
+    "108": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "109": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "110": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "112": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "113": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "114": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "115": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "117": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "118": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "DUP4",
+      "path": "38"
+    },
+    "119": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        902
+      ],
+      "op": "KECCAK256",
+      "path": "38"
+    },
+    "120": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "122": {
+      "op": "PUSH1",
+      "value": "0x1"
+    },
+    "124": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "126": {
+      "op": "SHL"
+    },
+    "127": {
+      "op": "SUB"
+    },
+    "128": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "DUP6",
+      "path": "38"
+    },
+    "129": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "AND",
+      "path": "38"
+    },
+    "130": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "DUP5",
+      "path": "38"
+    },
+    "131": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "132": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "133": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "SWAP2",
+      "path": "38"
+    },
+    "134": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "135": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "136": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "KECCAK256",
+      "path": "38"
+    },
+    "137": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "SLOAD",
+      "path": "38"
+    },
+    "138": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0xFF"
+    },
+    "140": {
+      "branch": 1,
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        911
+      ],
+      "op": "AND",
+      "path": "38"
+    },
+    "141": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x95"
+    },
+    "143": {
+      "branch": 1,
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "JUMPI",
+      "path": "38"
+    },
+    "144": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        946,
+        950
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x0"
+    },
+    "146": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0xD4"
+    },
+    "148": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "JUMP",
+      "path": "38"
+    },
+    "149": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "150": {
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "152": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "MLOAD",
+      "path": "38"
+    },
+    "153": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "155": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "ADD",
+      "path": "38"
+    },
+    "156": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "157": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "158": {
+      "op": "PUSH20",
+      "value": "0x455243313832305F4143434550545F4D41474943"
+    },
+    "179": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "181": {
+      "op": "SHL"
+    },
+    "182": {
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "183": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "184": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "POP",
+      "path": "38"
+    },
+    "185": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x14"
+    },
+    "187": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "ADD",
+      "path": "38"
+    },
+    "188": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "189": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "POP",
+      "path": "38"
+    },
+    "190": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "192": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "MLOAD",
+      "path": "38"
+    },
+    "193": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "195": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "196": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP4",
+      "path": "38"
+    },
+    "197": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "SUB",
+      "path": "38"
+    },
+    "198": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "SUB",
+      "path": "38"
+    },
+    "199": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "DUP2",
+      "path": "38"
+    },
+    "200": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "201": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "202": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x40"
+    },
+    "204": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        520,
+        560
+      ],
+      "op": "MSTORE",
+      "path": "38"
+    },
+    "205": {
+      "offset": [
+        510,
+        561
+      ],
+      "op": "DUP1",
+      "path": "38"
+    },
+    "206": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        510,
+        561
+      ],
+      "op": "MLOAD",
+      "path": "38"
+    },
+    "207": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        510,
+        561
+      ],
+      "op": "SWAP1",
+      "path": "38"
+    },
+    "208": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        510,
+        561
+      ],
+      "op": "PUSH1",
+      "path": "38",
+      "value": "0x20"
+    },
+    "210": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        510,
+        561
+      ],
+      "op": "ADD",
+      "path": "38"
+    },
+    "211": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        510,
+        561
+      ],
+      "op": "KECCAK256",
+      "path": "38"
+    },
+    "212": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        867,
+        951
+      ],
+      "op": "JUMPDEST",
+      "path": "38"
+    },
+    "213": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        860,
+        951
+      ],
+      "op": "SWAP4",
+      "path": "38"
+    },
+    "214": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "SWAP3",
+      "path": "38"
+    },
+    "215": {
+      "op": "POP"
+    },
+    "216": {
+      "op": "POP"
+    },
+    "217": {
+      "op": "POP"
+    },
+    "218": {
+      "fn": "ERC1820Implementer.canImplementInterfaceForAddress",
+      "jump": "o",
+      "offset": [
+        730,
+        958
+      ],
+      "op": "JUMP",
+      "path": "38"
+    }
+  },
+  "sha1": "50f33c6d69028ed063600cb5826ef32f23de9fca",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.6.0;\n\nimport \"./IERC1820Implementer.sol\";\n\n/**\n * @dev Implementation of the {IERC1820Implementer} interface.\n *\n * Contracts may inherit from this and call {_registerInterfaceForAddress} to\n * declare their willingness to be implementers.\n * {IERC1820Registry-setInterfaceImplementer} should then be called for the\n * registration to be complete.\n */\ncontract ERC1820Implementer is IERC1820Implementer {\n    bytes32 constant private _ERC1820_ACCEPT_MAGIC = keccak256(abi.encodePacked(\"ERC1820_ACCEPT_MAGIC\"));\n\n    mapping(bytes32 => mapping(address => bool)) private _supportedInterfaces;\n\n    /**\n     * See {IERC1820Implementer-canImplementInterfaceForAddress}.\n     */\n    function canImplementInterfaceForAddress(bytes32 interfaceHash, address account) public view override returns (bytes32) {\n        return _supportedInterfaces[interfaceHash][account] ? _ERC1820_ACCEPT_MAGIC : bytes32(0x00);\n    }\n\n    /**\n     * @dev Declares the contract as willing to be an implementer of\n     * `interfaceHash` for `account`.\n     *\n     * See {IERC1820Registry-setInterfaceImplementer} and\n     * {IERC1820Registry-interfaceHash}.\n     */\n    function _registerInterfaceForAddress(bytes32 interfaceHash, address account) internal virtual {\n        _supportedInterfaces[interfaceHash][account] = true;\n    }\n}\n",
+  "sourceMap": "404:954:38:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/lib/introspection/ERC1820Implementer.sol",
+  "type": "contract"
+}
