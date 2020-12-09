@@ -17,5 +17,10 @@ def test_token(token):
     assert tag1.ownerOf(1) == ac1
     tag1.safeTransferFrom(ac1,ac2,1)
     assert tag1.ownerOf(1) == ac2
+    assert tag1.balanceOf(ac1) == 1
+    assert tag1.balanceOf(ac2) == 1
+    tag1.safeTransferFrom(ac1,ac2,2)
+    assert tag1.balanceOf(ac1) == 0
+    assert tag1.balanceOf(ac2) == 2
  
 
