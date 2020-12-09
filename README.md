@@ -1,4 +1,4 @@
-#Since 2020.12.02 ezzcs
+apt-get install zlib1g-dev libsqlite3-dev tk-dev#Since 2020.12.02 ezzcs
 start work
 
 1 install  brownie
