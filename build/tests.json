@@ -59,6 +59,13 @@
       "results": ".",
       "sha1": "ba9179c5c905b9c6a22a367f7f9d4dd0af23018a",
       "txhash": []
+    },
+    "tests/testYIToken.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "066eb4bbdc07193441a3c970bcfb8763804e53c0",
+      "txhash": []
     }
   },
   "tx": {}
