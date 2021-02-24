@@ -25,3 +25,6 @@ pip3 install eth-brownie
 2021.02.19
 2021.02.20
 
+3 truffle compile
+ error duplicate
+ remove files in build
