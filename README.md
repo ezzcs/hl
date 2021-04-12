@@ -1,4 +1,4 @@
-#Since 2020.12.02 ezzcs
+#Sinc	i 2020.12.02 ezzcs
 
 start work
 
@@ -28,3 +28,11 @@ pip3 install eth-brownie
 3 truffle compile
  error duplicate
  remove files in build
+
+4 test libp2p form rust.
+  test it for the future comunication
+
+4 test libp2p form rust.
+  test it for the future comunication.
+ .
+ 
