@@ -34,6 +34,9 @@ pip3 install eth-brownie
 
 4 test libp2p form rust.
   test it for the future comunication.
- .
+
 
 5 coinbase lanched today. 
+
+6 test libp2p from go.
+2021.04.29
