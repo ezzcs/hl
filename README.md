@@ -41,3 +41,30 @@ pip3 install eth-brownie
 
 6 test libp2p from go.
 2021.04.29
+
+7 install nfs
+
+sudo apt-get install nfs-kernel-server  # 安装 NFS服务器端
+
+sudo apt-get install nfs-common         # 安装 NFS客户端
+
+sudo vim /etc/exports
+/nfsroot *(rw,sync,no_root_squash)
+
+sudo mkdir /nfsroot
+sudo chmod -R 777 /nfsroot
+sudo chown ipual:ipual /nfsroot/ -R  
+
+
+sudo /etc/init.d/nfs-kernel-server start    或者  
+sudo /etc/init.d/nfs-kernel-server restart
+
+sudo mount -t nfs 192.168.12.123:/nfsroot /mnt -o nolock
+
+nfs port:
+
+tcp 111 2049 端口
+
+udp 111 4046 端口
+
+
