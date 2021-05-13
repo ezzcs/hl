@@ -67,4 +67,12 @@ tcp 111 2049 端口
 
 udp 111 4046 端口
 
+8 add dns
+/etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+9 go env
+export GOPROXY=https://goproxy.cn
+
 
