@@ -75,4 +75,133 @@ nameserver 8.8.4.4
 9 go env
 export GOPROXY=https://goproxy.cn
 
+10 install ethereum
+
+$ sudo apt update
+$ sudo apt install software-properties-common
+
+sudo add-apt-repository -y ppa:ethereum/ethereuma
+
+apt update
+
+sudo apt-get update
+sudo apt-get install ethereum
+Or the develop version via:
+
+sudo apt-get update
+sudo apt-get install ethereum-unstable
+The abigen, bootnode, clef, evm, geth, puppeth, rlpdump, and wnode commands are then available on your system in /usr/bin/.
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+11 ethereum cmd
+
+miner.setEtherbase(ac1)
+miner.start(10)
+eth.mining
+
+nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+
+geth attach ipc:/data/gethdata/geth.ipc
+
+12
+
 
