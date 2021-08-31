@@ -102,106 +102,39 @@ nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --c
 
 geth attach ipc:/data/gethdata/geth.ipc
 
-11 ethereum cmd
+geth <other-flags> --mine --miner.threads=1 --miner.etherbase=0x0000000000000000000000000000000000000000
 
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
+12 install lotus 
+https://docs.filecoin.io/get-started/lotus/installation/#linux
 
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
 
-geth attach ipc:/data/gethdata/geth.ipc
+apt install mesa-opencl-icd ocl-icd-opencl-dev gcc git bzr jq pkg-config curl clang build-essential hwloc libhwloc-dev wget -y && sudo apt upgrade -y
 
-11 ethereum cmd
+install rustup
 
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
+install go
+To build Lotus, you need a working installation of Go 1.16.4 or higher
 
-geth attach ipc:/data/gethdata/geth.ipc
+wget -c https://golang.org/dl/go1.16.4.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc && source ~/.bashrc
+ 
+       
 
-11 ethereum cmd
+install lotus
 
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
+git clone https://github.com/filecoin-project/lotus.git
+cd lotus/
 
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
 
-geth attach ipc:/data/gethdata/geth.ipc
+13. lotus
 
-11 ethereum cmd
+lotus damon
+lotus wallet new
+lotus-miner init
 
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
+lotus wallet list
 
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-11 ethereum cmd
-
-miner.setEtherbase(ac1)
-miner.start(10)
-eth.mining
-
-nohup geth --datadir="/data/gethdata" --rpc --rpcaddr=0.0.0.0 --rpcport=8545 --cache=512 --maxpeers 9999 --rpcapi=“web3,eth,net,personal,db,admin” --rpccorsdomain="*" > ./geth.log &2>1
-
-geth attach ipc:/data/gethdata/geth.ipc
-
-12
 
 

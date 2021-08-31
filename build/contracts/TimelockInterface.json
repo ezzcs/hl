@@ -206,7 +206,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 1285,
-        "sourceUnit": 4785,
+        "sourceUnit": 4748,
         "src": "1803:23:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -309,7 +309,7 @@
                           "referencedDeclaration": 66,
                           "src": "2323:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_YIToken_$4784",
+                            "typeIdentifier": "t_contract$_YIToken_$4747",
                             "typeString": "contract YIToken"
                           }
                         },
@@ -320,7 +320,7 @@
                         "lValueRequested": false,
                         "memberName": "totalSupply",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 12813,
+                        "referencedDeclaration": 12188,
                         "src": "2323:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -468,7 +468,7 @@
                           "referencedDeclaration": 66,
                           "src": "2630:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_YIToken_$4784",
+                            "typeIdentifier": "t_contract$_YIToken_$4747",
                             "typeString": "contract YIToken"
                           }
                         },
@@ -479,7 +479,7 @@
                         "lValueRequested": false,
                         "memberName": "totalSupply",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 12813,
+                        "referencedDeclaration": 12188,
                         "src": "2630:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -930,7 +930,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_YIToken_$4784",
+              "typeIdentifier": "t_contract$_YIToken_$4747",
               "typeString": "contract YIToken"
             },
             "typeName": {
@@ -938,10 +938,10 @@
               "id": 65,
               "name": "YIToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4784,
+              "referencedDeclaration": 4747,
               "src": "3399:7:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_YIToken_$4784",
+                "typeIdentifier": "t_contract$_YIToken_$4747",
                 "typeString": "contract YIToken"
               }
             },
@@ -2667,7 +2667,7 @@
                       "referencedDeclaration": 66,
                       "src": "7130:2:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_YIToken_$4784",
+                        "typeIdentifier": "t_contract$_YIToken_$4747",
                         "typeString": "contract YIToken"
                       }
                     },
@@ -2701,10 +2701,10 @@
                         "name": "YIToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4784,
+                        "referencedDeclaration": 4747,
                         "src": "7135:7:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_YIToken_$4784_$",
+                          "typeIdentifier": "t_type$_t_contract$_YIToken_$4747_$",
                           "typeString": "type(contract YIToken)"
                         }
                       },
@@ -2719,13 +2719,13 @@
                       "src": "7135:12:0",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_YIToken_$4784",
+                        "typeIdentifier": "t_contract$_YIToken_$4747",
                         "typeString": "contract YIToken"
                       }
                     },
                     "src": "7130:17:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_YIToken_$4784",
+                      "typeIdentifier": "t_contract$_YIToken_$4747",
                       "typeString": "contract YIToken"
                     }
                   },
@@ -3057,7 +3057,7 @@
                               "referencedDeclaration": 66,
                               "src": "7376:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_YIToken_$4784",
+                                "typeIdentifier": "t_contract$_YIToken_$4747",
                                 "typeString": "contract YIToken"
                               }
                             },
@@ -3068,7 +3068,7 @@
                             "lValueRequested": false,
                             "memberName": "getPriorVotes",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4529,
+                            "referencedDeclaration": 4492,
                             "src": "7376:16:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_uint256_$",
@@ -8908,7 +8908,7 @@
                                 "referencedDeclaration": 66,
                                 "src": "11153:2:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_YIToken_$4784",
+                                  "typeIdentifier": "t_contract$_YIToken_$4747",
                                   "typeString": "contract YIToken"
                                 }
                               },
@@ -8919,7 +8919,7 @@
                               "lValueRequested": false,
                               "memberName": "getPriorVotes",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4529,
+                              "referencedDeclaration": 4492,
                               "src": "11153:16:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_uint256_$",
@@ -13778,7 +13778,7 @@
                         "referencedDeclaration": 66,
                         "src": "14239:2:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_YIToken_$4784",
+                          "typeIdentifier": "t_contract$_YIToken_$4747",
                           "typeString": "contract YIToken"
                         }
                       },
@@ -13789,7 +13789,7 @@
                       "lValueRequested": false,
                       "memberName": "getPriorVotes",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4529,
+                      "referencedDeclaration": 4492,
                       "src": "14239:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_uint256_$",
@@ -17556,7 +17556,7 @@
       "enabled": true,
       "runs": 200
     },
-    "version": "0.6.12"
+    "version": "0.6.12+commit.27d51765"
   },
   "contractName": "TimelockInterface",
   "coverageMap": {

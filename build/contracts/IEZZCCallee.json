@@ -30,21 +30,21 @@
     }
   ],
   "allSourcePaths": {
-    "28": "contracts/lib/ezzc/interfaces/IEZZCCallee.sol"
+    "26": "contracts/lib/ezzc/interfaces/IEZZCCallee.sol"
   },
   "ast": {
     "absolutePath": "contracts/lib/ezzc/interfaces/IEZZCCallee.sol",
     "exportedSymbols": {
       "IEZZCCallee": [
-        10889
+        10781
       ]
     },
-    "id": 10890,
+    "id": 10782,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10877,
+        "id": 10769,
         "literals": [
           "solidity",
           ">=",
@@ -52,7 +52,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:28"
+        "src": "0:24:26"
       },
       {
         "abstract": false,
@@ -61,9 +61,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 10889,
+        "id": 10781,
         "linearizedBaseContracts": [
-          10889
+          10781
         ],
         "name": "IEZZCCallee",
         "nodeType": "ContractDefinition",
@@ -72,7 +72,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "10d1e85c",
-            "id": 10888,
+            "id": 10780,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -80,18 +80,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 10886,
+              "id": 10778,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10879,
+                  "id": 10771,
                   "mutability": "mutable",
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 10888,
-                  "src": "77:14:28",
+                  "scope": 10780,
+                  "src": "77:14:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -99,10 +99,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 10878,
+                    "id": 10770,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "77:7:28",
+                    "src": "77:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -114,13 +114,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 10881,
+                  "id": 10773,
                   "mutability": "mutable",
                   "name": "amount0",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 10888,
-                  "src": "93:12:28",
+                  "scope": 10780,
+                  "src": "93:12:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -128,10 +128,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10880,
+                    "id": 10772,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "93:4:28",
+                    "src": "93:4:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -142,13 +142,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 10883,
+                  "id": 10775,
                   "mutability": "mutable",
                   "name": "amount1",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 10888,
-                  "src": "107:12:28",
+                  "scope": 10780,
+                  "src": "107:12:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -156,10 +156,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10882,
+                    "id": 10774,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "107:4:28",
+                    "src": "107:4:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -170,13 +170,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 10885,
+                  "id": 10777,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 10888,
-                  "src": "121:19:28",
+                  "scope": 10780,
+                  "src": "121:19:26",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -184,10 +184,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 10884,
+                    "id": 10776,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "121:5:28",
+                    "src": "121:5:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -197,26 +197,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "76:65:28"
+              "src": "76:65:26"
             },
             "returnParameters": {
-              "id": 10887,
+              "id": 10779,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "150:0:28"
+              "src": "150:0:26"
             },
-            "scope": 10889,
-            "src": "54:97:28",
+            "scope": 10781,
+            "src": "54:97:26",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 10890,
-        "src": "26:127:28"
+        "scope": 10782,
+        "src": "26:127:26"
       }
     ],
-    "src": "0:154:28"
+    "src": "0:154:26"
   },
   "bytecode": "",
   "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
@@ -226,7 +226,7 @@
       "enabled": true,
       "runs": 200
     },
-    "version": "0.6.12"
+    "version": "0.6.12+commit.27d51765"
   },
   "contractName": "IEZZCCallee",
   "coverageMap": {
