@@ -1,1 +1,1 @@
-go build
+go build -o ~/bin/ezlc
